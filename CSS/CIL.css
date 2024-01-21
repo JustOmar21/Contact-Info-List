@@ -1,0 +1,56 @@
+.formit {
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+   justify-content: space-around;
+   border-radius: 20px;
+   background-color: rgba(128, 128, 128, 0.312);
+}
+
+html {
+   background-color: whitesmoke;
+}
+
+
+.formit .form {
+   text-align: center;
+   padding: 20px;
+   display: inline-block;
+   
+   overflow-x: auto;
+}
+
+fieldset {
+   display: flex;
+   justify-content: space-around;
+   justify-content: wrap;
+}
+
+.dataTable,
+th,
+td,
+tr {
+   border: 1px solid;
+   padding: 10px;
+   white-space: nowrap;
+   overflow-x: auto;
+   border-collapse: collapse;
+}
+
+.dataTable {
+   overflow-x: scroll;
+}
+
+img {
+   height: 20px;
+   width: 20px;
+}
+
+img:hover {
+   cursor: pointer;
+}
+
+#check:disabled {
+   color: initial;
+}

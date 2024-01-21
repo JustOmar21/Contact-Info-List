@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Assignment II</title>
+   <link rel="stylesheet" href="CSS/bootstrap.min.css">
+   <link rel="stylesheet" href="CSS/CIL.css">
+</head>
+
+<body>
+   <div class="formit form">
+      <form action="" method="get" class="form">
+         <h1>Contact Info</h1>
+         <input type="text" name="ID" id="ID" hidden readonly value="0">
+         <fieldset>
+            <div>
+               <input class="form-check-input" type="radio" name="gender" id="mister" value="Mister" checked>
+               <label class="form-check-label" for="mister">Mr</label>   
+            </div>
+            <div>
+               <input class="form-check-input" type="radio" name="gender" id="miss" value="Miss">
+               <label class="form-check-label" for="miss">Ms</label>
+            </div>
+         </fieldset>
+         <label class="form-label" for="name">Name:</label>
+         <input maxlength="50" class="form-control" type="text" name="name" id="name" required>
+         <p class="nameVali form-text text-danger"></p>
+         <br>
+         <label class="form-label" for="email">Email:</label>
+         <input maxlength="50" class="form-control" type="email" name="email" id="email" required>
+         <p class="emailVali form-text text-danger"></p>
+         <br>
+         <label class="form-label" for="card">Phone:</label>
+         <input type="tel" id="card" class="form-control">
+         <p class="phoneVali form-text text-danger"></p>
+         <br>
+         <label>
+            <input class="form-check-input" type="checkbox" name="checked" id="check"> Favourites ?
+         </label>
+         <br><br>
+         <p class="validate"></p>
+         <br>
+         <input type="button" value="Add User" id="operateBtn">
+      </form>
+      <div class="form">
+         <input class="form-control mb-2" type="text" id="Search" placeholder="Search by name">
+         <table class="dataTable table table-striped table-hover">
+
+            <caption>List of Users</caption>
+            <thead>
+               <tr>
+                  <th>Name</th>
+                  <th>Email</th>
+                  <th>Card</th>
+                  <th>Favourite</th>
+                  <th>Edit</th>
+                  <th>Delete</th>
+               </tr>
+            </thead>
+            <tbody class="tableBody">
+
+            </tbody>
+            <tfoot>
+               <tr colspan="6">
+                  <td># of Users = <span id="usersNum">0</span></td>
+               </tr>
+            </tfoot>
+         </table>
+      </div>
+   </div>
+
+   <script src="JS/CIL.js"></script>
+</body>
+
+</html>

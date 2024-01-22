@@ -4,7 +4,6 @@
    flex-wrap: wrap;
    flex-direction: row;
    justify-content: space-around;
-   border-radius: 20px;
    background-color: rgba(128, 128, 128, 0.312);
 }
 

@@ -155,7 +155,7 @@ function editUserAction(e) {
       for (let user of userArr) {
          if (user.UserID == ID.value) {
             user.name = name.value;
-            user.gender = male.checked ? "Mister" : "Miss";
+            user.gender = male.checked ? "Mr" : "Ms";
             user.email = email.value;
             user.card = card.value;
             user.check = check.checked;

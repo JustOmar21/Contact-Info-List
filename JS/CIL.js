@@ -194,8 +194,8 @@ function deletusUser(e) {
       showUser();
    }
    else {
-      vali.innerHTML = "YOU CANNOT EDIT/DELETE AGAIN UNLESS YOU FINISH YOUR CURRENT EDIT/DELETE STOP MAKING MY LIFE HARDER";
-      vali.setAttribute("style", "display:block;");
+      vali.innerHTML = "YOU CANNOT EDIT/DELETE AGAIN UNLESS YOU FINISH YOUR CURRENT EDIT/DELETE";
+      vali.setAttribute("style", "display:inline-block;");
    }
 }
 

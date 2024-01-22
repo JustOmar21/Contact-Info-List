@@ -52,25 +52,25 @@ showUser();
 function User(name, male, email, card, check) {
    this.UserID = IDnum++;
    localStorage.setItem("ID", IDnum);
-   this.name = name.value;
+   this.name = name.value.trim();
    this.gender = male.checked ? "Mr" : "Ms";
-   this.email = email.value;
-   this.card = card.value;
+   this.email = email.value.trim();
+   this.card = card.value.trim();
    this.check = check.checked;
 }
 
 function ValidateName()
 {
    let nameRegex = /^[a-zA-Z\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF]+(?:[' -][a-zA-Z\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF]+)?(?: [a-zA-Z\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF]+(?:[' -][a-zA-Z\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF]+)?)?$/;
-   nameStatus = nameRegex.test(name.value);
+   nameStatus = nameRegex.test(name.value.trim());
    nameValidation.innerHTML = nameStatus ? "" : "Enter a valid name";
    return nameStatus;
 }
 
 function ValidateEmail()
 {
-   let emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
-   emailStatus = emailRegex.test(email.value);
+   let emailRegex = /^[a-zA-Z0-9._%+-]+(?:[a-zA-Z0-9-][a-zA-Z0-9._%+-]*@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})$/
+   emailStatus = emailRegex.test(email.value.trim());
    emailValidation.innerHTML = emailStatus ? "" : "Enter a valid email";
    return emailStatus;
 }
@@ -78,7 +78,7 @@ function ValidateEmail()
 function ValidatePhone()
 {
    let phoneRegex = /^(?:\+[0-9]\s?){0,3}(?:[0-9]\s?){1,14}$/
-   phoneStatus = phoneRegex.test(card.value);
+   phoneStatus = phoneRegex.test(card.value.trim());
    phoneValidation.innerHTML = phoneStatus ? "" : "Enter a valid phone number";
    return phoneStatus;
 }
@@ -154,10 +154,10 @@ function editUserAction(e) {
       vali.setAttribute("style", "display:none;");
       for (let user of userArr) {
          if (user.UserID == ID.value) {
-            user.name = name.value;
+            user.name = name.value.trim();
             user.gender = male.checked ? "Mr" : "Ms";
-            user.email = email.value;
-            user.card = card.value;
+            user.email = email.value.trim();
+            user.card = card.value.trim();
             user.check = check.checked;
             operateBtn.classList.remove("btn-danger");
             operateBtn.classList.add("btn-dark");

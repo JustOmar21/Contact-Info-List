@@ -61,7 +61,7 @@ function User(name, male, email, card, check) {
 
 function ValidateName()
 {
-   let nameRegex = /^[a-zA-Z]+(?:[' -][a-zA-Z]+)?(?: [a-zA-Z]+(?:[' -][a-zA-Z]+)?)*$/;
+   let nameRegex = /^[a-zA-Z\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF]+(?:[' -][a-zA-Z\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF]+)?(?: [a-zA-Z\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF]+(?:[' -][a-zA-Z\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF]+)?)?$/;
    nameStatus = nameRegex.test(name.value);
    nameValidation.innerHTML = nameStatus ? "" : "Enter a valid name";
    return nameStatus;

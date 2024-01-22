@@ -1,15 +1,16 @@
+body {
+   background-color: rgba(128, 128, 128, 0.312);
+}
+
 .formit {
    width: 100%;
    display: flex;
    flex-wrap: wrap;
    flex-direction: row;
    justify-content: space-around;
-   background-color: rgba(128, 128, 128, 0.312);
 }
 
-html {
-   background-color: rgba(128, 128, 128, 0.312);
-}
+
 
 
 .formit .form {

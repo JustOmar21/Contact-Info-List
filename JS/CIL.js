@@ -232,6 +232,8 @@ function createTableElement(user) {
 
    let emailTd = document.createElement("td");
    emailTd.innerHTML = `${user.email}`;
+   emailTd.addEventListener("click" , ()=> window.open(`mailto:${user.email}`));
+   emailTd.style.cursor = "pointer";
 
    let cardTd = document.createElement("td");
    cardTd.innerHTML = `${user.card}`;

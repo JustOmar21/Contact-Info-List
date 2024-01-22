@@ -12,3 +12,4 @@
 ### Edit and delete existing contacts.
 ### Search for contacts by name.
 ### Validation for all fields in the app
+### send emails and call numbers

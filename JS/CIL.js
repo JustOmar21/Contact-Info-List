@@ -121,6 +121,8 @@ function editUser(e) {
       {
          if(user.UserID == IDNow)
          {
+            operateBtn.classList.remove("btn-dark");
+            operateBtn.classList.add("btn-danger");
             operateBtn.value = "Edit User";
             operateBtn.removeEventListener("click", createUser);
             ID.value = user.UserID;
@@ -157,6 +159,8 @@ function editUserAction(e) {
             user.email = email.value;
             user.card = card.value;
             user.check = check.checked;
+            operateBtn.classList.remove("btn-danger");
+            operateBtn.classList.add("btn-dark");
             operateBtn.value = "Add User";
             operateBtn.addEventListener("click", createUser);
             operateBtn.removeEventListener("click", editUserAction);

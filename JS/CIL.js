@@ -235,6 +235,8 @@ function createTableElement(user) {
 
    let cardTd = document.createElement("td");
    cardTd.innerHTML = `${user.card}`;
+   cardTd.addEventListener("click" , () => window.open(`tel:${user.card}`))
+   cardTd.style.cursor = "pointer";
 
    let saveCheck = document.createElement("input");
    saveCheck.setAttribute("type", "checkbox");

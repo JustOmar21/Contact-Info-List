@@ -10,7 +10,10 @@ body {
    justify-content: space-around;
 }
 
-
+.validate
+{
+   color: red;
+}
 
 
 .formit .form {

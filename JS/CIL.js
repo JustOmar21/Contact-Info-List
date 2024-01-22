@@ -242,7 +242,7 @@ function createTableElement(user) {
 
    let saveCheck = document.createElement("input");
    saveCheck.setAttribute("type", "checkbox");
-   saveCheck.disabled = true;
+   saveCheck.addEventListener("click", (e)=>e.preventDefault());
    saveCheck.checked = user.check;
    saveCheck.setAttribute("style","form-check-input");
 

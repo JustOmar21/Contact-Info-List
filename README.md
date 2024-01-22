@@ -3,7 +3,7 @@
 ### This is a simple responsive web application for managing contact information. 
 ### Users can add, edit, and delete contacts. 
 ### The application supports Regex Implemention for all fields
-### The application uses HTML, CSS, and JavaScript.
+### The application uses HTML, CSS, JavaScript and Bootstrap.
 
 # Features
 ### Add new contacts with name, email, and phone number.
